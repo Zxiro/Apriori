@@ -3,11 +3,14 @@ I set min_sup as 0.5,  min_conf as 0.75**
 
 Start_Kaggle
 {'BREAD'}  :  0.65
+
 **With min_sup:  0.5 , min_conf:  0.75 The association rule is:  []**
+
 Start_IBM
 {'3'}  :  0.6325231481481481
 {'8'}  :  0.6657021604938271
 {'9'}  :  0.5810185185185185
+
 **With min_sup:  0.5 , min_conf:  0.25 The association rule is:  []**
 
 **As the result, there are few set that fit the support, without the set, there will be no chance to establish the rule between it.**
@@ -17,11 +20,14 @@ I set min_sup 0.5,  min_conf as 0.25**
 
 Start_Kaggle
 {'BREAD'}  :  0.65
+
 **With min_sup:  0.5 , min_conf:  0.25 The association rule is:  []**
+
 Start_IBM
 {'3'}  :  0.6325231481481481
 {'8'}  :  0.6657021604938271
 {'9'}  :  0.5810185185185185
+
 **With min_sup:  0.5 , min_conf:  0.25 The association rule is:  []**
 
 **As the result, although the threshold to establish the rule become lower, the amount of frequent set still not enough to establish the association rule**
