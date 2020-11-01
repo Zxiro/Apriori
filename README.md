@@ -1,3 +1,35 @@
+**For High Support and High Conf, which means it has high freqency and correaltion. 
+I set min_sup as 0.5,  min_conf as 0.75**
+
+Start_Kaggle
+{'BREAD'}  :  0.65
+**With min_sup:  0.5 , min_conf:  0.75 The association rule is:  []**
+Start_IBM
+{'3'}  :  0.6325231481481481
+{'8'}  :  0.6657021604938271
+{'9'}  :  0.5810185185185185
+**With min_sup:  0.5 , min_conf:  0.25 The association rule is:  []**
+
+**As the result, there are few set that fit the support, without the set, there will be no chance to establish the rule between it.**
+
+**For High Support and Low Conf, it doesn’t give a strict rule to connect, so it may depends on the amount of frequent set
+I set min_sup 0.5,  min_conf as 0.25**
+
+Start_Kaggle
+{'BREAD'}  :  0.65
+**With min_sup:  0.5 , min_conf:  0.25 The association rule is:  []**
+Start_IBM
+{'3'}  :  0.6325231481481481
+{'8'}  :  0.6657021604938271
+{'9'}  :  0.5810185185185185
+**With min_sup:  0.5 , min_conf:  0.25 The association rule is:  []**
+
+**As the result, although the threshold to establish the rule become lower, the amount of frequent set still not enough to establish the association rule**
+
+
+
+
+
 **For Low support and High conf, which means the amount of freq will increase. However, the diffculites of establish a correlation between elements will increase too, due to the High conf**
 **I set min_sup 0.1,  min_conf as 0.75**
 
@@ -49,7 +81,7 @@ Start_Kaggle
 {'CORNFLAKES', 'TEA'}  :  0.1
 {'TEA', 'MAGGI'}  :  0.2
 
-**With min_sup:  0.1 , min_conf:  0.75 The association rule is: ["{'BISCUIT', 'COFFEE'}->{'CORNFLAKES', 'COCK'}", "{'BISCUIT'}->{'CORNFLAKES', 'COCK'}", "{'BISCUIT'}->{'CORNFLAKES', 'COFFEE', 'COCK'}", "{'BREAD', 'MAGGI'}->{'JAM'}", "{'BREAD'}->{'JAM', 'MAGGI'}", "{'BREAD'}->{'JAM'}", "{'BREAD'}->{'MILK', 'BISCUIT'}", "{'BREAD'}->{'MILK'}", "{'BREAD'}->{'TEA', 'BOURNVITA'}", "{'COCK'}->{'BISCUIT', 'COFFEE'}", "{'COCK'}->{'CORNFLAKES', 'BISCUIT', 'COFFEE'}", "{'COFFEE'}->{'BISCUIT', 'COCK'}", "{'COFFEE'}->{'COCK'}", "{'COFFEE'}->{'CORNFLAKES', 'BISCUIT', 'COCK'}", "{'COFFEE'}->{'CORNFLAKES', 'COCK'}", "{'CORNFLAKES', 'COCK'}->{'BISCUIT', 'COFFEE'}", "{'CORNFLAKES', 'COFFEE'}->{'BISCUIT', 'COCK'}", "{'CORNFLAKES'}->{'BISCUIT', 'COCK', 'COFFEE'}", "{'CORNFLAKES'}->{'BISCUIT', 'COCK'}", "{'CORNFLAKES'}->{'BISCUIT', 'COFFEE'}", "{'MAGGI'}->{'BISCUIT', 'TEA'}", "{'MAGGI'}->{'BREAD', 'JAM'}", "{'MAGGI'}->{'JAM'}", "{'TEA'}->{'BISCUIT', 'MAGGI'}", "{'TEA'}->{'MAGGI'}"] **
+**With min_sup:  0.1 , min_conf:  0.75 The association rule is: ["{'BISCUIT', 'COFFEE'}->{'CORNFLAKES', 'COCK'}", "{'BISCUIT'}->{'CORNFLAKES', 'COCK'}", "{'BISCUIT'}->{'CORNFLAKES', 'COFFEE', 'COCK'}", "{'BREAD', 'MAGGI'}->{'JAM'}", "{'BREAD'}->{'JAM', 'MAGGI'}", "{'BREAD'}->{'JAM'}", "{'BREAD'}->{'MILK', 'BISCUIT'}", "{'BREAD'}->{'MILK'}", "{'BREAD'}->{'TEA', 'BOURNVITA'}", "{'COCK'}->{'BISCUIT', 'COFFEE'}", "{'COCK'}->{'CORNFLAKES', 'BISCUIT', 'COFFEE'}", "{'COFFEE'}->{'BISCUIT', 'COCK'}", "{'COFFEE'}->{'COCK'}", "{'COFFEE'}->{'CORNFLAKES', 'BISCUIT', 'COCK'}", "{'COFFEE'}->{'CORNFLAKES', 'COCK'}", "{'CORNFLAKES', 'COCK'}->{'BISCUIT', 'COFFEE'}", "{'CORNFLAKES', 'COFFEE'}->{'BISCUIT', 'COCK'}", "{'CORNFLAKES'}->{'BISCUIT', 'COCK', 'COFFEE'}", "{'CORNFLAKES'}->{'BISCUIT', 'COCK'}", "{'CORNFLAKES'}->{'BISCUIT', 'COFFEE'}", "{'MAGGI'}->{'BISCUIT', 'TEA'}", "{'MAGGI'}->{'BREAD', 'JAM'}", "{'MAGGI'}->{'JAM'}", "{'TEA'}->{'BISCUIT', 'MAGGI'}", "{'TEA'}->{'MAGGI'}"]**
 
 Start_IBM
 {'0'}  :  0.3150077160493827
@@ -92,7 +124,7 @@ Start_IBM
 {'6', '9'}  :  0.14564043209876543
 {'7', '9'}  :  0.18267746913580246
 
-**With min_sup:  0.1 , min_conf:  0.75 The association rule is:**  []
+**With min_sup:  0.1 , min_conf:  0.75 The association rule is: []**
 
 **As the result, there are lot sets that fit the support. Based on observation, we can easily tell the difference between concentrated dataset and sparse dataset. For the Kaggle dataset, we can find the rule, but for the IBM which is more sparse, there exist no rule between freq sets.**
 **For Low support and Low conf, which means it is very easy to establish rule. However, the connection between sets may not be meaningful enough**
